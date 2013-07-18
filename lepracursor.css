@@ -1,0 +1,54 @@
+
+html { cursor: none;}
+
+a { text-decoration: underline;}
+
+a:hover { text-decoration: none; color: #66F;}
+
+.node {
+  fill: #ccc;
+  cursor: none;
+  backgound: url(img/cursor.png) 0 0 no-repeat;
+}
+
+.node_selected {
+  fill: #ccc;
+  stroke: #ccc;
+}
+
+.drag_line {
+  stroke: #FF1;
+  stroke-width: 5;
+  pointer-events: none;
+  stroke-opacity: 0;
+}
+
+.drag_line_hidden {
+  stroke: #999;
+  stroke-width: 0;
+  pointer-events: none;
+}
+
+.link {
+  stroke: #999;
+  stroke-width: 0;
+  cursor: none;
+  
+}
+
+.link_selected {
+  stroke: #ff7f0e;
+}
+
+svg { 
+    border: 0px;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+        z-index: 1000;
+        pointer-events:none;
+
+}
+
